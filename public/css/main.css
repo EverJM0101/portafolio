@@ -19,4 +19,6 @@ main{
 #handle-pointer-cursor{
     font-weight: thin;
     animation: desvanecer-aparecer 1s infinite; 
+    position: relative; /* o absolute, dependiendo de tu layout */
+    z-index: -9; /* Un z-index menor que la navbar */
 }
