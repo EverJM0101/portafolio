@@ -1,0 +1,22 @@
+main{
+    padding: 12em 6em 0 11em;
+}
+
+.mi-nombre{
+    font-size: 3.85em;
+    font-weight: bold;
+}
+
+@keyframes desvanecer-aparecer {
+    0%, 100% {
+        opacity: 1; /* Comienza y termina completamente visible */
+    }
+    50% {
+        opacity: 0; /* Se desvanece a la mitad */
+    }
+}
+
+#handle-pointer-cursor{
+    font-weight: thin;
+    animation: desvanecer-aparecer 1s infinite; 
+}
