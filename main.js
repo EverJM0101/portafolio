@@ -2,13 +2,11 @@ const miElemento = document.getElementById('navbar');
 let scrollAnterior = 0;
 
 window.addEventListener('scroll', () => {
-    const scrollActual = window.scrollY; // Moderno y recomendado
-
+    const scrollActual = window.scrollY;
     if (scrollActual > scrollAnterior) {
         miElemento.classList.add('activo');
-    } else {
+    } else if (scrollActual === 0) {
         miElemento.classList.remove('activo');
     }
-
-    scrollAnterior = scrollActual <= 0 ? 0 : scrollActual;
+    scrollAnterior = scrollActual;
 });

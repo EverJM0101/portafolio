@@ -2,9 +2,55 @@ main{
     padding: 12em 6em 0 11em;
 }
 
+.mi-nombre-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
 .mi-nombre{
     font-size: 3.85em;
     font-weight: bold;
+}
+
+.sub-titulo-nombre{
+    margin-left: 52px;
+    font-size: 2em;
+}
+
+.info{
+    width: 100%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10em 0  0;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 52px;
+    padding-right: 25em;
+}
+
+.informacion p{
+    font-size: 1.2em;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.foto{
+    min-width: 235px;
+    border-radius: 1.5em;
 }
 
 @keyframes desvanecer-aparecer {
@@ -22,3 +68,7 @@ main{
     position: relative; /* o absolute, dependiendo de tu layout */
     z-index: -9; /* Un z-index menor que la navbar */
 }
+
+
+
+
